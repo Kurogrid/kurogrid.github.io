@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEONDECK Gizlilik Politikası · Kurogrid</title>
+<meta name="description" content="NEONDECK privacy policy.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b0b0f">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body class="p-neondeck">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="currentColor"><rect x="2" y="2" width="6" height="6"/><rect x="9" y="2" width="6" height="6" opacity=".35"/><rect x="16" y="2" width="6" height="6"/><rect x="2" y="9" width="6" height="6" opacity=".35"/><rect x="9" y="9" width="6" height="6" fill="var(--accent)" opacity="1"/><rect x="16" y="9" width="6" height="6" opacity=".35"/><rect x="2" y="16" width="6" height="6"/><rect x="9" y="16" width="6" height="6" opacity=".35"/><rect x="16" y="16" width="6" height="6"/></g></svg><span>KUROGRID</span></a>
+<nav class="nav" aria-label="Main"><a href="/#projects">Projects</a><a href="/neondeck/">NEONDECK</a><a href="/neondeck/privacy" aria-current="page">Privacy</a></nav>
+</div></header>
+<main id="main">
+<section class="hero" style="padding-bottom:0"><div class="wrap doc">
+<p class="lang"><a href="./">NEONDECK</a> · <a href="privacy" hreflang="en">English</a></p>
+<h1>NEONDECK Gizlilik Politikası</h1>
+<p><em>Son güncelleme: 12.11.2026 (Firefox)</em></p>
+<p>NEONDECK, Firefox ve Chrome için yeni sekme sayfasını bir kontrol paneliyle değiştiren bir tarayıcı eklentisidir. Bu politika verilerine ne olduğunu açıklar. Kısaca: <strong>NEONDECK'in sunucusu, hesap sistemi, analitiği ve reklamı yoktur. Verilerin tarayıcında kalır.</strong></p>
+<h2>NEONDECK neyi saklar</h2>
+<p>Kurduğun her şey yalnızca kendi cihazında, tarayıcının yerel eklenti depolamasında (<code>storage.local</code>) tutulur:</p>
+<ul><li>ayarlar (ad, dil, tema, görünüm seçenekleri, arama motorları)</li><li>netlink'lerin (kayıtlı bağlantılar ve kategoriler)</li><li>widget içerikleri: notlar, görevler, alışkanlıklar, dünya saati dilimleri, AI hızlı bağlantıları, Pomodoro sayaç durumu, hava durumu için seçtiğin şehir</li><li>kısa süreli hava durumu önbelleği (15 dakikada bir yenilenir)</li></ul>
+<p>Bu veriler başka cihazlara eşitlenmez ve geliştiriciye asla gönderilmez. Eklentiyi kaldırmak ya da <strong>Ayarlar → Veri → Varsayılanlara dön</strong> düğmesi verileri siler.</p>
+<h2>Ağ istekleri</h2>
+<p>NEONDECK yalnızca tek bir servise, yalnızca <strong>Hava durumu</strong> widget'ını açıp bir şehir seçersen bağlanır:</p>
+<ul><li><strong>Open-Meteo</strong> (<code>api.open-meteo.com</code>, <code>geocoding-api.open-meteo.com</code>): konum ararken yazdığın şehir adını ve seçtiğin konumun iki ondalığa yuvarlanmış koordinatlarını (yaklaşık 1 km) alır. İstekler çerez ve yönlendiren (referrer) bilgisi olmadan gönderilir. Open-Meteo'nun koşulları ve gizlilik bilgileri: <a href="https://open-meteo.com/">https://open-meteo.com/</a></li></ul>
+<p>Firefox'ta bu, opsiyonel <em>konum</em> verisi olarak beyan edilir: Firefox ilk hava isteğinden önce onayını ister; onayı istediğin zaman eklentinin izinlerinden geri alabilirsin. Onay olmadan widget hiçbir şey göndermez.</p>
+<p>Eklentinin yaptığı başka bir istek yoktur. Arama yaptığında ya da bir bağlantı açtığında tarayıcın o siteye (örneğin seçtiğin arama motoruna) gider; o sitenin ne yaptığı kendi gizlilik politikasına tabidir.</p>
+<h2>Opsiyonel izinler</h2>
+<p>NEONDECK yalnızca <code>storage</code> izniyle kurulur. Diğer izinler opsiyoneldir ve yalnızca ilgili düğmeye tıkladığında istenir:</p>
+<ul><li><strong>Site favicon'ları (<code>favicon</code>, yalnızca Chrome)</strong>: site ikonlarını tarayıcının kendi ikon önbelleğinden gösterir. Sitelere istek gönderilmez.</li><li><strong>Tarayıcı yer imleri (<code>bookmarks</code>)</strong>: yalnızca <strong>Yer imlerini içe aktar</strong>'a tıkladığında bir kez okunur ve cihazındaki netlink'lerine kopyalanır. Yer imleri hiçbir yere gönderilmez.</li></ul>
+<p>Bunları istediğin zaman <strong>Ayarlar → İzinler</strong>'den ya da tarayıcının eklentiler sayfasından geri alabilirsin.</p>
+<h2>Yedekler</h2>
+<p><strong>JSON dışa aktar</strong> bilgisayarında bir dosya oluşturur; <strong>JSON içe aktar</strong> seçtiğin dosyayı okur. Bu dosyalar sen paylaşmadıkça cihazından çıkmaz. Yüklenen arka planlar yedeğe dahil edilmez.</p>
+<h2>NEONDECK'in yapmadıkları</h2>
+<ul><li>kullanıcı hesabı ya da oturum açma yok</li><li>analitik, telemetri, izleme ya da reklam yok</li><li>veriler kimseye satılmaz ya da paylaşılmaz</li><li>uzak kod yok: eklentinin çalıştırdığı her şey paketin içindedir</li></ul>
+<h2>Çocuklar</h2>
+<p>NEONDECK çocuklar dahil kimseden bilerek veri toplamaz.</p>
+<h2>Değişiklikler</h2>
+<p>Bu politika değişirse yeni sürüm aynı adreste yeni tarihle yayımlanır.</p>
+<h2>İletişim</h2>
+<p>Sorular için: <a href="mailto:kurogrid.dev@gmail.com">kurogrid.dev@gmail.com</a></p>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap">
+<span>© 2026 Kurogrid · Independent browser extensions</span>
+<span><a href="mailto:kurogrid.dev@gmail.com">kurogrid.dev@gmail.com</a> · <a href="https://github.com/Kurogrid">GitHub</a></span>
+</div></footer>
+</body>
+</html>

@@ -1,5 +1,5 @@
 # kurogrid.github.io
 
-Public site for Kurogrid browser extensions: privacy policies and contact.
+Public site for Kurogrid browser extensions: project pages, privacy policies and contact.
 
-Published with GitHub Pages at https://kurogrid.github.io/
+Plain static HTML/CSS (no Jekyll, no external fonts or scripts), published with GitHub Pages at https://kurogrid.github.io/

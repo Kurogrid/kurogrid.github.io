@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEONDECK Privacy Policy · Kurogrid</title>
+<meta name="description" content="NEONDECK privacy policy.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b0b0f">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body class="p-neondeck">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="currentColor"><rect x="2" y="2" width="6" height="6"/><rect x="9" y="2" width="6" height="6" opacity=".35"/><rect x="16" y="2" width="6" height="6"/><rect x="2" y="9" width="6" height="6" opacity=".35"/><rect x="9" y="9" width="6" height="6" fill="var(--accent)" opacity="1"/><rect x="16" y="9" width="6" height="6" opacity=".35"/><rect x="2" y="16" width="6" height="6"/><rect x="9" y="16" width="6" height="6" opacity=".35"/><rect x="16" y="16" width="6" height="6"/></g></svg><span>KUROGRID</span></a>
+<nav class="nav" aria-label="Main"><a href="/#projects">Projects</a><a href="/neondeck/">NEONDECK</a><a href="/neondeck/privacy" aria-current="page">Privacy</a></nav>
+</div></header>
+<main id="main">
+<section class="hero" style="padding-bottom:0"><div class="wrap doc">
+<p class="lang"><a href="./">NEONDECK</a> · <a href="gizlilik" hreflang="tr">Türkçe</a></p>
+<h1>NEONDECK Privacy Policy</h1>
+<p><em>Last updated: 2026-11-12 (Firefox)</em></p>
+<p>NEONDECK is a browser extension for Firefox and Chrome that replaces the new tab page with a dashboard. This policy explains what happens to your data. In short: <strong>NEONDECK has no servers, no accounts, no analytics and no ads. Your data stays in your browser.</strong></p>
+<h2>What NEONDECK stores</h2>
+<p>Everything you set up is saved only on your device, in the browser's local extension storage (<code>storage.local</code>):</p>
+<ul><li>settings (name, language, theme, display options, search engines)</li><li>your netlinks (saved links and categories)</li><li>widget content: notes, tasks, habits, world clock zones, AI quick links, Pomodoro timer state, the city you chose for weather</li><li>a short-lived weather cache (refreshed every 15 minutes)</li></ul>
+<p>This data is not synced to other devices and is never sent to the developer. Uninstalling the extension, or using <strong>Settings → Data → Reset to defaults</strong>, deletes it.</p>
+<h2>Network requests</h2>
+<p>NEONDECK itself contacts only one service, and only if you turn on the <strong>Weather</strong> widget and choose a city:</p>
+<ul><li><strong>Open-Meteo</strong> (<code>api.open-meteo.com</code>, <code>geocoding-api.open-meteo.com</code>) receives the city name you type when searching for a location, and the chosen location's coordinates rounded to two decimals (about 1 km). Requests are sent without cookies and without a referrer. See Open-Meteo's terms and privacy information at <a href="https://open-meteo.com/">https://open-meteo.com/</a>.</li></ul>
+<p>In Firefox, this is declared as optional <em>location</em> data: Firefox asks for your consent before the first weather request, and you can withdraw it at any time in the add-on's permissions. Without consent the widget sends nothing.</p>
+<p>No other request is made by the extension. When you search or open a link, your browser simply navigates to that website (for example your chosen search engine); what that website does is covered by its own privacy policy.</p>
+<h2>Optional permissions</h2>
+<p>NEONDECK installs with the <code>storage</code> permission only. Further permissions are optional and are requested only when you click the related button:</p>
+<ul><li><strong>Site favicons (<code>favicon</code>, Chrome only)</strong>: shows website icons from the browser's own icon cache. No request is made to the websites.</li><li><strong>Browser bookmarks (<code>bookmarks</code>)</strong>: read once, when you click <strong>Import bookmarks</strong>, to copy bookmarks into your netlinks on your device. Bookmarks are not sent anywhere.</li></ul>
+<p>You can revoke them at any time in <strong>Settings → Permissions</strong> or on the browser's extensions page.</p>
+<h2>Backups</h2>
+<p><strong>Export JSON</strong> creates a file on your computer; <strong>Import JSON</strong> reads a file you choose. These files never leave your device unless you share them yourself. Uploaded backgrounds are not included.</p>
+<h2>What NEONDECK does not do</h2>
+<ul><li>no user accounts or sign-in</li><li>no analytics, telemetry, tracking or advertising</li><li>no sale or sharing of data with anyone</li><li>no remote code: everything the extension runs is included in the package</li></ul>
+<h2>Children</h2>
+<p>NEONDECK does not knowingly collect data from anyone, including children.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published at the same address with a new date.</p>
+<h2>Contact</h2>
+<p>Questions: <a href="mailto:kurogrid.dev@gmail.com">kurogrid.dev@gmail.com</a></p>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap">
+<span>© 2026 Kurogrid · Independent browser extensions</span>
+<span><a href="mailto:kurogrid.dev@gmail.com">kurogrid.dev@gmail.com</a> · <a href="https://github.com/Kurogrid">GitHub</a></span>
+</div></footer>
+</body>
+</html>
