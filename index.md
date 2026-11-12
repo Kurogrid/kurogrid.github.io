@@ -1,6 +1,6 @@
 # Kurogrid
 
-Browser themes and new tab extensions.
+Browser themes and new tab extensions for Firefox and Chrome.
 
 ## Privacy policies
 
