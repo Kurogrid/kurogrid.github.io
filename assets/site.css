@@ -1,14 +1,15 @@
-/* Kurogrid site. Brand palette from the Kurogrid emblem (warm "ember grid"); NEONDECK pages switch to their own palette. No external fonts or scripts. */
+/* Kurogrid site. Palette "Kor Izgara" (matches the Kurogrid emblem); NEONDECK pages switch to their own palette. No external fonts or scripts. */
 :root {
-  --bg: #120d0a;
-  --surface: #1b130f;
+  /* Kor Izgara: warm and energetic (orange, amber, red) */
+  --bg: #110b08;
+  --surface: #1e1410;
   --line: #3b2a21;
-  --text: #f6eadf;
-  --muted: #c9b2a1;
-  --accent: #ff9222;
-  --accent-2: #ffc233;
-  --accent-3: #e4451d;
-  --on-accent: #120d0a;
+  --text: #fff1e6;
+  --muted: #c7a995;
+  --accent: #ff7a1a;
+  --accent-2: #ffc23d;
+  --accent-3: #ff3b3b;
+  --on-accent: #110b08;
   --cut: 14px;
   --mono: ui-monospace, 'Cascadia Mono', 'SF Mono', Consolas, 'Liberation Mono', monospace;
   --sans: 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -128,12 +129,12 @@ h3 { font-size: 17px; margin-bottom: 6px; }
 /* ---------- Kurogrid brand look (everything outside .p-neondeck) ---------- */
 body:not(.p-neondeck) {
   background:
-    radial-gradient(900px 420px at 18% -8%, rgba(255, 146, 34, .13), transparent 70%),
-    radial-gradient(700px 380px at 92% 4%, rgba(214, 43, 31, .09), transparent 70%),
+    radial-gradient(900px 420px at 18% -8%, rgba(255, 122, 26, .14), transparent 70%),
+    radial-gradient(700px 380px at 92% 4%, rgba(255, 59, 59, .09), transparent 70%),
     var(--bg);
 }
-body:not(.p-neondeck) a { color: #ffb13d; }
-body:not(.p-neondeck) a:hover { color: var(--accent-2); }
+body:not(.p-neondeck) a { color: var(--accent-2); }
+body:not(.p-neondeck) a:hover { color: var(--accent); }
 body:not(.p-neondeck) .nav { font: 500 14px/1 var(--sans); letter-spacing: 0; text-transform: none; }
 body:not(.p-neondeck) .nav a { color: var(--muted); }
 body:not(.p-neondeck) .nav a[aria-current="page"], body:not(.p-neondeck) .nav a:hover { color: var(--accent-2); }
@@ -143,13 +144,13 @@ body:not(.p-neondeck) .panel { background: color-mix(in srgb, var(--surface) 88%
 body:not(.p-neondeck) .panel h3 { color: var(--text); }
 body:not(.p-neondeck) .feature { border-left-color: var(--accent); }
 body:not(.p-neondeck) .tag { border-radius: 6px; }
-body:not(.p-neondeck) .top, body:not(.p-neondeck) .foot { border-color: #2a1d17; }
+body:not(.p-neondeck) .top, body:not(.p-neondeck) .foot { border-color: #2a1c15; }
 body:not(.p-neondeck) .foot { color: var(--muted); }
 
 .kg-hero { display: flex; align-items: center; gap: clamp(20px, 4vw, 44px); }
-.kg-emblem { width: clamp(96px, 16vw, 168px); height: auto; flex: none; filter: drop-shadow(0 0 28px rgba(255, 146, 34, .28)); }
+.kg-emblem { width: clamp(96px, 16vw, 168px); height: auto; flex: none; filter: drop-shadow(0 0 28px rgba(255, 122, 26, .3)); }
 .kg-word { font: 650 clamp(52px, 10vw, 104px)/.95 var(--sans); letter-spacing: -.035em; color: var(--text); margin: 0; }
-.kg-tag { margin: 14px 0 0; font: 500 clamp(17px, 2.2vw, 24px)/1.2 var(--sans); letter-spacing: .02em; color: #ffa32a; }
+.kg-tag { margin: 14px 0 0; font: 500 clamp(17px, 2.2vw, 24px)/1.2 var(--sans); letter-spacing: .02em; color: var(--accent); }
 .hero .lead { margin-top: 36px; }
 
 /* NEONDECK project card on the Kurogrid home keeps its own colours */
