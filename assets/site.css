@@ -4,7 +4,7 @@
   --surface: #1b130f;
   --line: #3b2a21;
   --text: #f6eadf;
-  --muted: #b8a291;
+  --muted: #c9b2a1;
   --accent: #ff9222;
   --accent-2: #ffc233;
   --accent-3: #e4451d;
@@ -122,8 +122,37 @@ h3 { font-size: 17px; margin-bottom: 6px; }
   .btn, .project, .nav a { transition: background-color .15s, color .15s, border-color .15s; }
 }
 
-/* brand hero */
-.logo-hero { display: block; width: min(560px, 100%); height: auto; margin: 0 0 8px -2.5%; }
-.emblem-row { display: flex; gap: 10px; align-items: center; }
-.glow { filter: drop-shadow(0 0 18px color-mix(in srgb, var(--accent) 35%, transparent)); }
-.p-neondeck .logo-hero { width: min(520px, 100%); margin-left: -4%; }
+/* NEONDECK hero logo (raster, keep aspect) */
+.logo-hero { display: block; width: min(520px, 100%); height: auto; margin: 0 0 8px -4%; }
+
+/* ---------- Kurogrid brand look (everything outside .p-neondeck) ---------- */
+body:not(.p-neondeck) {
+  background:
+    radial-gradient(900px 420px at 18% -8%, rgba(255, 146, 34, .13), transparent 70%),
+    radial-gradient(700px 380px at 92% 4%, rgba(214, 43, 31, .09), transparent 70%),
+    var(--bg);
+}
+body:not(.p-neondeck) a { color: #ffb13d; }
+body:not(.p-neondeck) a:hover { color: var(--accent-2); }
+body:not(.p-neondeck) .nav { font: 500 14px/1 var(--sans); letter-spacing: 0; text-transform: none; }
+body:not(.p-neondeck) .nav a { color: var(--muted); }
+body:not(.p-neondeck) .nav a[aria-current="page"], body:not(.p-neondeck) .nav a:hover { color: var(--accent-2); }
+body:not(.p-neondeck) .eyebrow { font: 600 13px/1 var(--sans); letter-spacing: .08em; color: var(--accent-2); }
+body:not(.p-neondeck) .cut { clip-path: none; border-radius: 16px; }
+body:not(.p-neondeck) .panel { background: color-mix(in srgb, var(--surface) 88%, transparent); border-color: var(--line); }
+body:not(.p-neondeck) .panel h3 { color: var(--text); }
+body:not(.p-neondeck) .feature { border-left-color: var(--accent); }
+body:not(.p-neondeck) .tag { border-radius: 6px; }
+body:not(.p-neondeck) .top, body:not(.p-neondeck) .foot { border-color: #2a1d17; }
+body:not(.p-neondeck) .foot { color: var(--muted); }
+
+.kg-hero { display: flex; align-items: center; gap: clamp(20px, 4vw, 44px); }
+.kg-emblem { width: clamp(96px, 16vw, 168px); height: auto; flex: none; filter: drop-shadow(0 0 28px rgba(255, 146, 34, .28)); }
+.kg-word { font: 650 clamp(52px, 10vw, 104px)/.95 var(--sans); letter-spacing: -.035em; color: var(--text); margin: 0; }
+.kg-tag { margin: 14px 0 0; font: 500 clamp(17px, 2.2vw, 24px)/1.2 var(--sans); letter-spacing: .02em; color: #ffa32a; }
+.hero .lead { margin-top: 36px; }
+
+/* NEONDECK project card on the Kurogrid home keeps its own colours */
+.project.p-neondeck { background: #0b0c10; border-color: #2a2e40; border-radius: 16px; }
+.project.p-neondeck:hover { border-color: #fdee0b; }
+.project.p-neondeck .tag { border-radius: 0; }
