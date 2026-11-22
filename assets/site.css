@@ -157,3 +157,10 @@ body:not(.p-neondeck) .foot { color: var(--muted); }
 .project.p-neondeck { background: #0b0c10; border-color: #2a2e40; border-radius: 16px; }
 .project.p-neondeck:hover { border-color: #fdee0b; }
 .project.p-neondeck .tag { border-radius: 0; }
+
+/* screenshot gallery */
+.shots { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.shots .shot:first-child { grid-column: 1 / -1; }
+.shot { display: block; border: 1px solid var(--line); background: var(--surface); padding: 6px; }
+.shot img { display: block; width: 100%; height: auto; }
+.shot:hover { border-color: var(--accent); }
