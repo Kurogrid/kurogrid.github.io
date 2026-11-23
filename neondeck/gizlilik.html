@@ -25,16 +25,18 @@
 <section class="hero" style="padding-bottom:0"><div class="wrap doc">
 <p class="lang"><a href="./">NEONDECK</a> · <a href="privacy" hreflang="en">English</a></p>
 <h1>NEONDECK Gizlilik Politikası</h1>
-<p><em>Son güncelleme: 12.11.2026 (Firefox)</em></p>
+<p><em>Son güncelleme: 23.11.2026</em></p>
 <p>NEONDECK, Firefox ve Chrome için yeni sekme sayfasını bir kontrol paneliyle değiştiren bir tarayıcı eklentisidir. Bu politika verilerine ne olduğunu açıklar. Kısaca: <strong>NEONDECK'in sunucusu, hesap sistemi, analitiği ve reklamı yoktur. Verilerin tarayıcında kalır.</strong></p>
 <h2>NEONDECK neyi saklar</h2>
 <p>Kurduğun her şey yalnızca kendi cihazında, tarayıcının yerel eklenti depolamasında (<code>storage.local</code>) tutulur:</p>
 <ul><li>ayarlar (ad, dil, tema, görünüm seçenekleri, arama motorları)</li><li>netlink'lerin (kayıtlı bağlantılar ve kategoriler)</li><li>widget içerikleri: notlar, görevler, alışkanlıklar, dünya saati dilimleri, AI hızlı bağlantıları, Pomodoro sayaç durumu, hava durumu için seçtiğin şehir</li><li>kısa süreli hava durumu önbelleği (15 dakikada bir yenilenir)</li></ul>
 <p>Bu veriler başka cihazlara eşitlenmez ve geliştiriciye asla gönderilmez. Eklentiyi kaldırmak ya da <strong>Ayarlar → Veri → Varsayılanlara dön</strong> düğmesi verileri siler.</p>
 <h2>Ağ istekleri</h2>
-<p>NEONDECK yalnızca tek bir servise, yalnızca <strong>Hava durumu</strong> widget'ını açıp bir şehir seçersen bağlanır:</p>
+<p>Aşağıda anlatılan opsiyonel Spotify radyosu dışında NEONDECK yalnızca tek bir servise, yalnızca <strong>Hava durumu</strong> widget'ını açıp bir şehir seçersen bağlanır:</p>
 <ul><li><strong>Open-Meteo</strong> (<code>api.open-meteo.com</code>, <code>geocoding-api.open-meteo.com</code>): konum ararken yazdığın şehir adını ve seçtiğin konumun iki ondalığa yuvarlanmış koordinatlarını (yaklaşık 1 km) alır. İstekler çerez ve yönlendiren (referrer) bilgisi olmadan gönderilir. Open-Meteo'nun koşulları ve gizlilik bilgileri: <a href="https://open-meteo.com/">https://open-meteo.com/</a></li></ul>
 <p>Firefox'ta bu, opsiyonel <em>konum</em> verisi olarak beyan edilir: Firefox ilk hava isteğinden önce onayını ister; onayı istediğin zaman eklentinin izinlerinden geri alabilirsin. Onay olmadan widget hiçbir şey göndermez.</p>
+<h2>Radyo (opsiyonel, Spotify)</h2>
+<p>Radyo sen açana kadar kapalıdır. Radyo panelini (Ayarlar'dan ya da Ortam sesi widget'ından) açtığında NEONDECK, Spotify'ın resmi gömülü oynatıcısını <code>open.spotify.com</code> adresinden yükler. O andan itibaren tarayıcın doğrudan Spotify ile konuşur: Spotify olağan bağlantı bilgilerini (IP adresin ve tarayıcı bilgilerin gibi) alır, kendi çerezlerini kullanabilir ve kendi gizlilik politikasını uygular (<a href="https://www.spotify.com/legal/privacy-policy/">https://www.spotify.com/legal/privacy-policy/</a>). Spotify'da oturumun açıksa ne dinlediğini görebilir. NEONDECK Spotify'a başka hiçbir şey göndermez ve ondan veri almaz. Radyo ayarların (seçili istasyon, son parça) cihazında kalır. Yerel çalara eklediğin müzikler yalnızca tarayıcında (IndexedDB) saklanır, hiçbir yere yüklenmez.</p>
 <p>Eklentinin yaptığı başka bir istek yoktur. Arama yaptığında ya da bir bağlantı açtığında tarayıcın o siteye (örneğin seçtiğin arama motoruna) gider; o sitenin ne yaptığı kendi gizlilik politikasına tabidir.</p>
 <h2>Opsiyonel izinler</h2>
 <p>NEONDECK yalnızca <code>storage</code> izniyle kurulur. Diğer izinler opsiyoneldir ve yalnızca ilgili düğmeye tıkladığında istenir:</p>
@@ -43,7 +45,7 @@
 <h2>Yedekler</h2>
 <p><strong>JSON dışa aktar</strong> bilgisayarında bir dosya oluşturur; <strong>JSON içe aktar</strong> seçtiğin dosyayı okur. Bu dosyalar sen paylaşmadıkça cihazından çıkmaz. Yüklenen arka planlar yedeğe dahil edilmez.</p>
 <h2>NEONDECK'in yapmadıkları</h2>
-<ul><li>kullanıcı hesabı ya da oturum açma yok</li><li>analitik, telemetri, izleme ya da reklam yok</li><li>veriler kimseye satılmaz ya da paylaşılmaz</li><li>uzak kod yok: eklentinin çalıştırdığı her şey paketin içindedir</li></ul>
+<ul><li>kullanıcı hesabı ya da oturum açma yok</li><li>analitik, telemetri, izleme ya da reklam yok</li><li>veriler kimseye satılmaz ya da paylaşılmaz</li><li>uzak kod yok: eklentinin çalıştırdığı her şey paketin içindedir (opsiyonel Spotify oynatıcısı kendi yalıtılmış çerçevesinde çalışır)</li></ul>
 <h2>Çocuklar</h2>
 <p>NEONDECK çocuklar dahil kimseden bilerek veri toplamaz.</p>
 <h2>Değişiklikler</h2>

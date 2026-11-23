@@ -25,16 +25,18 @@
 <section class="hero" style="padding-bottom:0"><div class="wrap doc">
 <p class="lang"><a href="./">NEONDECK</a> · <a href="gizlilik" hreflang="tr">Türkçe</a></p>
 <h1>NEONDECK Privacy Policy</h1>
-<p><em>Last updated: 2026-11-12 (Firefox)</em></p>
+<p><em>Last updated: 2026-11-23</em></p>
 <p>NEONDECK is a browser extension for Firefox and Chrome that replaces the new tab page with a dashboard. This policy explains what happens to your data. In short: <strong>NEONDECK has no servers, no accounts, no analytics and no ads. Your data stays in your browser.</strong></p>
 <h2>What NEONDECK stores</h2>
 <p>Everything you set up is saved only on your device, in the browser's local extension storage (<code>storage.local</code>):</p>
 <ul><li>settings (name, language, theme, display options, search engines)</li><li>your netlinks (saved links and categories)</li><li>widget content: notes, tasks, habits, world clock zones, AI quick links, Pomodoro timer state, the city you chose for weather</li><li>a short-lived weather cache (refreshed every 15 minutes)</li></ul>
 <p>This data is not synced to other devices and is never sent to the developer. Uninstalling the extension, or using <strong>Settings → Data → Reset to defaults</strong>, deletes it.</p>
 <h2>Network requests</h2>
-<p>NEONDECK itself contacts only one service, and only if you turn on the <strong>Weather</strong> widget and choose a city:</p>
+<p>Apart from the optional Spotify radio described below, NEONDECK itself contacts only one service, and only if you turn on the <strong>Weather</strong> widget and choose a city:</p>
 <ul><li><strong>Open-Meteo</strong> (<code>api.open-meteo.com</code>, <code>geocoding-api.open-meteo.com</code>) receives the city name you type when searching for a location, and the chosen location's coordinates rounded to two decimals (about 1 km). Requests are sent without cookies and without a referrer. See Open-Meteo's terms and privacy information at <a href="https://open-meteo.com/">https://open-meteo.com/</a>.</li></ul>
 <p>In Firefox, this is declared as optional <em>location</em> data: Firefox asks for your consent before the first weather request, and you can withdraw it at any time in the add-on's permissions. Without consent the widget sends nothing.</p>
+<h2>Radio (optional, Spotify)</h2>
+<p>The radio is off until you open it. When you open the radio panel (in Settings or in the Ambient sound widget), NEONDECK shows Spotify's official embedded player, loaded from <code>open.spotify.com</code>. From that moment your browser talks to Spotify directly: Spotify receives the usual connection data (such as your IP address and browser details), may set its own cookies, and applies its own privacy policy (<a href="https://www.spotify.com/legal/privacy-policy/">https://www.spotify.com/legal/privacy-policy/</a>). If you are signed in to Spotify, it may know what you play. NEONDECK does not send Spotify anything else and does not receive any data back from it. The radio settings (chosen station, last track) stay on your device. Music you add to the local player is stored only in your browser (IndexedDB) and never uploaded.</p>
 <p>No other request is made by the extension. When you search or open a link, your browser simply navigates to that website (for example your chosen search engine); what that website does is covered by its own privacy policy.</p>
 <h2>Optional permissions</h2>
 <p>NEONDECK installs with the <code>storage</code> permission only. Further permissions are optional and are requested only when you click the related button:</p>
@@ -43,7 +45,7 @@
 <h2>Backups</h2>
 <p><strong>Export JSON</strong> creates a file on your computer; <strong>Import JSON</strong> reads a file you choose. These files never leave your device unless you share them yourself. Uploaded backgrounds are not included.</p>
 <h2>What NEONDECK does not do</h2>
-<ul><li>no user accounts or sign-in</li><li>no analytics, telemetry, tracking or advertising</li><li>no sale or sharing of data with anyone</li><li>no remote code: everything the extension runs is included in the package</li></ul>
+<ul><li>no user accounts or sign-in</li><li>no analytics, telemetry, tracking or advertising</li><li>no sale or sharing of data with anyone</li><li>no remote code: everything the extension runs is included in the package (the optional Spotify player runs in its own isolated frame)</li></ul>
 <h2>Children</h2>
 <p>NEONDECK does not knowingly collect data from anyone, including children.</p>
 <h2>Changes</h2>
