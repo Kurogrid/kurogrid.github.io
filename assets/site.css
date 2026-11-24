@@ -164,3 +164,7 @@ body:not(.p-neondeck) .foot { color: var(--muted); }
 .shot { display: block; border: 1px solid var(--line); background: var(--surface); padding: 6px; }
 .shot img { display: block; width: 100%; height: auto; }
 .shot:hover { border-color: var(--accent); }
+
+/* showcase images */
+.showcase { margin: 0 0 18px; border: 1px solid var(--line); background: var(--surface); padding: 6px; }
+.showcase img { display: block; width: 100%; height: auto; }
