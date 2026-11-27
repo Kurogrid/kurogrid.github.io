@@ -168,3 +168,7 @@ body:not(.p-neondeck) .foot { color: var(--muted); }
 /* showcase images */
 .showcase { margin: 0 0 18px; border: 1px solid var(--line); background: var(--surface); padding: 6px; }
 .showcase img { display: block; width: 100%; height: auto; }
+.demo__video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; }
+.demo__still { display: none; }
+.demo__cap { margin: 6px 2px 0; font-size: 13px; color: var(--muted, #9aa); }
+@media (prefers-reduced-motion: reduce) { .demo__video { display: none; } .demo__still { display: block; } }
